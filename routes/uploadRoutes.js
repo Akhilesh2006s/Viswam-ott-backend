@@ -23,7 +23,7 @@ router.post('/video', protectSuperAdmin, uploadVideo, (req, res) => {
         originalName: req.file.originalname,
         size: req.file.size,
         path: `/uploads/${req.file.filename}`,
-        url: `http://localhost:3001/uploads/${req.file.filename}`,
+        url: `https://viswam-ott-backend-production.up.railway.app/uploads/${req.file.filename}`,
       },
       message: 'Video uploaded successfully to local storage',
     });
@@ -54,7 +54,7 @@ router.post('/thumbnail', protectSuperAdmin, uploadThumbnail, (req, res) => {
         originalName: req.file.originalname,
         size: req.file.size,
         path: `/uploads/${req.file.filename}`,
-        url: `http://localhost:3001/uploads/${req.file.filename}`,
+        url: `https://viswam-ott-backend-production.up.railway.app/uploads/${req.file.filename}`,
       },
       message: 'Thumbnail uploaded successfully',
     });
