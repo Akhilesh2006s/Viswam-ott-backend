@@ -1,0 +1,21 @@
+{
+  "name": "viswam-ott-backend",
+  "version": "1.0.0",
+  "description": "Viswam OTT Backend API",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "init-admin": "node scripts/initSuperAdmin.js",
+    "test-subjects": "node scripts/testSubjects.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.3",
+    "multer": "^2.0.2"
+  }
+}
